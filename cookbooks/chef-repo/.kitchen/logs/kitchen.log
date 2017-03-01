@@ -1,0 +1,72 @@
+I, [2017-02-22T19:33:27.071080 #4918]  INFO -- Kitchen: -----> Starting Kitchen (v1.15.0)
+E, [2017-02-22T19:33:27.121494 #4918] ERROR -- Kitchen: ------Exception-------
+E, [2017-02-22T19:33:27.121561 #4918] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2017-02-22T19:33:27.121580 #4918] ERROR -- Kitchen: Message: You must first install the Docker CLI tool http://www.docker.io/gettingstarted/
+E, [2017-02-22T19:33:27.121594 #4918] ERROR -- Kitchen: ----------------------
+E, [2017-02-22T19:33:27.121606 #4918] ERROR -- Kitchen: ------Backtrace-------
+E, [2017-02-22T19:33:27.121617 #4918] ERROR -- Kitchen: /home/user/.chefdk/gem/ruby/2.3.0/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:93:in `rescue in verify_dependencies'
+E, [2017-02-22T19:33:27.121629 #4918] ERROR -- Kitchen: /home/user/.chefdk/gem/ruby/2.3.0/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:91:in `verify_dependencies'
+E, [2017-02-22T19:33:27.121652 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/driver.rb:43:in `for_plugin'
+E, [2017-02-22T19:33:27.121663 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:233:in `new_driver'
+E, [2017-02-22T19:33:27.121674 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:246:in `new_instance'
+E, [2017-02-22T19:33:27.121685 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:142:in `block in build_instances'
+E, [2017-02-22T19:33:27.121697 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:141:in `map'
+E, [2017-02-22T19:33:27.121708 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:141:in `with_index'
+E, [2017-02-22T19:33:27.121719 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:141:in `build_instances'
+E, [2017-02-22T19:33:27.121730 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:117:in `instances'
+E, [2017-02-22T19:33:27.121741 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:112:in `filtered_instances'
+E, [2017-02-22T19:33:27.121798 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:142:in `parse_subcommand'
+E, [2017-02-22T19:33:27.121810 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command/action.rb:35:in `block in call'
+E, [2017-02-22T19:33:27.121821 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-02-22T19:33:27.121831 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command/action.rb:34:in `call'
+E, [2017-02-22T19:33:27.121842 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:53:in `perform'
+E, [2017-02-22T19:33:27.121852 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:187:in `block (2 levels) in <class:CLI>'
+E, [2017-02-22T19:33:27.121863 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2017-02-22T19:33:27.121874 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2017-02-22T19:33:27.121884 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:334:in `invoke_task'
+E, [2017-02-22T19:33:27.121895 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2017-02-22T19:33:27.121907 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2017-02-22T19:33:27.121927 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2017-02-22T19:33:27.121941 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2017-02-22T19:33:27.121952 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/bin/kitchen:13:in `<top (required)>'
+E, [2017-02-22T19:33:27.121962 #4918] ERROR -- Kitchen: /usr/bin/kitchen:21:in `load'
+E, [2017-02-22T19:33:27.121973 #4918] ERROR -- Kitchen: /usr/bin/kitchen:21:in `<main>'
+E, [2017-02-22T19:33:27.121983 #4918] ERROR -- Kitchen: ----End Backtrace-----
+E, [2017-02-22T19:33:27.121993 #4918] ERROR -- Kitchen: ---Nested Exception---
+E, [2017-02-22T19:33:27.122003 #4918] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2017-02-22T19:33:27.122013 #4918] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of sudo -E docker >> /dev/null 2>&1 ----
+STDOUT: 
+STDERR: 
+---- End output of sudo -E docker >> /dev/null 2>&1 ----
+Ran sudo -E docker >> /dev/null 2>&1 returned 1
+E, [2017-02-22T19:33:27.122023 #4918] ERROR -- Kitchen: ----------------------
+E, [2017-02-22T19:33:27.122034 #4918] ERROR -- Kitchen: ------Backtrace-------
+E, [2017-02-22T19:33:27.122075 #4918] ERROR -- Kitchen: /home/user/.chefdk/gem/ruby/2.3.0/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:93:in `rescue in verify_dependencies'
+E, [2017-02-22T19:33:27.122086 #4918] ERROR -- Kitchen: /home/user/.chefdk/gem/ruby/2.3.0/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:91:in `verify_dependencies'
+E, [2017-02-22T19:33:27.122097 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/driver.rb:43:in `for_plugin'
+E, [2017-02-22T19:33:27.122107 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:233:in `new_driver'
+E, [2017-02-22T19:33:27.122130 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:246:in `new_instance'
+E, [2017-02-22T19:33:27.122141 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:142:in `block in build_instances'
+E, [2017-02-22T19:33:27.122152 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:141:in `map'
+E, [2017-02-22T19:33:27.122162 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:141:in `with_index'
+E, [2017-02-22T19:33:27.122173 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:141:in `build_instances'
+E, [2017-02-22T19:33:27.122184 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/config.rb:117:in `instances'
+E, [2017-02-22T19:33:27.122194 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:112:in `filtered_instances'
+E, [2017-02-22T19:33:27.122207 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command.rb:142:in `parse_subcommand'
+E, [2017-02-22T19:33:27.122218 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command/action.rb:35:in `block in call'
+E, [2017-02-22T19:33:27.122229 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-02-22T19:33:27.122239 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/command/action.rb:34:in `call'
+E, [2017-02-22T19:33:27.122253 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:53:in `perform'
+E, [2017-02-22T19:33:27.122265 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:187:in `block (2 levels) in <class:CLI>'
+E, [2017-02-22T19:33:27.122281 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2017-02-22T19:33:27.122294 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2017-02-22T19:33:27.122305 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/cli.rb:334:in `invoke_task'
+E, [2017-02-22T19:33:27.122316 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2017-02-22T19:33:27.122327 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2017-02-22T19:33:27.122354 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2017-02-22T19:33:27.122370 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2017-02-22T19:33:27.122381 #4918] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.15.0/bin/kitchen:13:in `<top (required)>'
+E, [2017-02-22T19:33:27.122391 #4918] ERROR -- Kitchen: /usr/bin/kitchen:21:in `load'
+E, [2017-02-22T19:33:27.122402 #4918] ERROR -- Kitchen: /usr/bin/kitchen:21:in `<main>'
+E, [2017-02-22T19:33:27.122413 #4918] ERROR -- Kitchen: ----End Backtrace-----
